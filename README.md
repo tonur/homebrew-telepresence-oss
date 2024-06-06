@@ -1,2 +1,2 @@
 # homebrew-blackbird
-Homebrew tap for Blackbird projects, in particular Telepresence
+Homebrew tap for OSS version of Telepresence
