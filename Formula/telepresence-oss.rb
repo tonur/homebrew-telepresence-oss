@@ -28,7 +28,9 @@ class TelepresenceOss < Formula
   conflicts_with "telepresence"
 
   def install
-    bin.install "telepresence"
+    # Found from https://stackoverflow.com/questions/70593365/homebrew-formula-renaming-files-on-install
+    binfile_with_extension = File.basename(Dir.glob "#{prefix}/bin/telepresence*")
+    bin.install binfile_with_extension => "telepresence"
   end
 
   test do
