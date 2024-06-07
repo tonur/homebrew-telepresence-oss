@@ -1,5 +1,4 @@
-# This script is generated automatically by the release automation code in the
-# Telepresence repository:
+# Would be nice to automate this as part of the github actions at https://github.com/telepresenceio/telepresence/blob/release/v2/.github/workflows/release.yaml
 class TelepresenceOss < Formula
   desc "Local dev environment attached to a remote Kubernetes cluster"
   homepage "https://telepresence.io"
