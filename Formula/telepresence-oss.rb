@@ -28,7 +28,10 @@ class TelepresenceOss < Formula
   conflicts_with "telepresence"
 
   def install
-    bin.install Dir["*telepresence-*"].first => "telepresence"
+    # Extract the filename from the URL
+    filename = File.basename(url)
+    
+    bin.install filename => "telepresence"
   end
 
   test do
